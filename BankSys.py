@@ -72,7 +72,7 @@ while True:
     if option==2:
         cardid=input('请输入卡号：')
         pwd=input('请输入密码：')
-        if users[cardid]:
+        if cardid in users:
             if users[cardid]['pwd']==pwd:
                 print('登录成功！\n')
                 ShowMenu(2)
