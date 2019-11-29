@@ -107,7 +107,9 @@ while True:
                             print('身份验证不通过，请重试！')
                         ShowMenu(2)
                     if option==5:
+                        option=0
                         break
+                        
             else:
                 print('登录失败：账号或密码错误！')
         else:
